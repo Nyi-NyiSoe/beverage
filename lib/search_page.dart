@@ -34,7 +34,7 @@ class SearchPage extends StatelessWidget {
 
             ElevatedButton(onPressed: ()async{
               var data = await loadData.readJson();
-              print(data[0]['itemName']);
+              print(data);
             }, child: Text('load'))
           ],
         ),

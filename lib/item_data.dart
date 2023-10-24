@@ -6,6 +6,6 @@ class ItemData {
         imgUrl: 'images/cola.png',
         itemName: 'Cocacola',
         price: '20',
-        color: Colors.red)
+       )
   ];
 }

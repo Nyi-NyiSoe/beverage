@@ -1,6 +1,9 @@
+import 'package:beverage/load_item_data.dart';
 import 'package:flutter/material.dart';
 import 'item.dart';
 import 'tab_bar_widget.dart';
+import 'constants.dart';
+
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
 
@@ -10,13 +13,27 @@ class HomePage extends StatefulWidget {
 
 class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
   late final TabController _tabController =
-      TabController(length: 3, vsync: this);
-     
+      TabController(length: 5, vsync: this);
+
+  final LoadItemData loadData = LoadItemData();
+  var sodaItems = [];
+
+  @override
+  void initState() {
+    super.initState();
+    getSodaList();
+    print(sodaItems);
+  }
+
+  void getSodaList() async {
+    sodaItems = await loadData.readJson();
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('B E V E R A G E'),
+        title: Text('B E V E R A G E S'),
       ),
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
@@ -24,34 +41,34 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
           TabBarWidget(tabController: _tabController),
           Container(
             height: MediaQuery.of(context).size.height * 0.36,
-            child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  const Text('All beverages'),
-                  Expanded(
-                      child: ListView.builder(
-                        padding: EdgeInsets.all(5),
-                        
-                          itemCount: 5,
-                          itemBuilder: ((context, index) {
-                            return Card(
-                              elevation: 2,
-                              child: Padding(
-                                padding: const EdgeInsets.all(8.0),
-                                child: ListTile(
-                                  leading: Container(
-                                    decoration: BoxDecoration(borderRadius: BorderRadius.circular(10),color:Colors.redAccent),
-                                    child: Image(
-                                      image: AssetImage('images/cola.png'),
-                                    ),
-                                  ),
-                                  title: Text('Cocacola',style: TextStyle(fontSize: 20,fontStyle: FontStyle.italic,fontWeight: FontWeight.w500),),
-                                  trailing: Text('20',style: TextStyle(fontSize: 20,fontWeight: FontWeight.w500),),
+            child:
+                Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
+              const Text('All beverages'),
+              Expanded(
+                  child: ListView.builder(
+                      padding: EdgeInsets.all(5),
+                      itemCount: sodaItems.length,
+                      itemBuilder: ((context, index) {
+                        return Card(
+                          
+                          elevation: 2,
+                          child: Padding(
+                            padding: const EdgeInsets.all(8.0),
+                            child: Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              children: [
+                                Image(image: AssetImage(sodaItems[index]['imgUrl']),height: 100,width: 100,),
+                                Padding(
+                                  padding: const EdgeInsets.only(right: 50),
+                                  child: Text(sodaItems[index]['itemName'],style: kitemNameStyle,),
                                 ),
-                              ),
-                            );
-                          })))
-                ]),
+                                Text(sodaItems[index]['price'],style: kitemNameStyle,)
+                              ],
+                            )
+                          ),
+                        );
+                      })))
+            ]),
           )
         ],
       ),

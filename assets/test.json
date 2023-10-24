@@ -1,21 +1,39 @@
-
-[
-  {
-    "imgUrl": "images/cola.png",
-    "itemName": "Cocacola",
-    "price": "20",
-    "color": "#FF0000"
-  },
-  {
-    "imgUrl": "images/pepsi.png",
-    "itemName": "Pepsi",
-    "price": "18",
-    "color": "#005BB5"
-  },
-  {
-    "imgUrl": "images/water.png",
-    "itemName": "Water",
-    "price": "1",
-    "color": "#00FFFF"
-  }
-]
+{
+  "sodaList": [
+    {
+      "imgUrl": "images/soda/coca_cola.jpg",
+      "itemName": "Cocacola",
+      "price": "20"
+    },
+    {
+      "imgUrl": "images/soda/pepsi.png",
+      "itemName": "Pepsi",
+      "price": "25"
+    },
+    {
+      "imgUrl": "images/soda/sprite.jpg",
+      "itemName": "Sprite",
+      "price": "18"
+    },
+    {
+      "imgUrl": "images/soda/dr_pepper.jpg",
+      "itemName": "Dr. Pepper",
+      "price": "22"
+    },
+    {
+      "imgUrl": "images/soda/mountain_dew.jpg",
+      "itemName": "Mountain Dew",
+      "price": "21"
+    },
+    {
+      "imgUrl": "images/soda/fanta.jpg",
+      "itemName": "Fanta",
+      "price": "19"
+    },
+    {
+      "imgUrl": "images/soda/7up.jpg",
+      "itemName": "7UP",
+      "price": "17"
+    }
+  ]
+}
