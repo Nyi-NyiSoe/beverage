@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
-
+import 'load_item_data.dart';
 class SearchPage extends StatelessWidget {
   const SearchPage({super.key});
 
   @override
   Widget build(BuildContext context) {
+    LoadItemData loadData = LoadItemData();
     return SafeArea(
       child: Scaffold(
         body: Column(
@@ -18,7 +19,10 @@ class SearchPage extends StatelessWidget {
                       borderRadius: BorderRadius.circular(30),
                       color: Colors.grey.shade300),
                   child: TextField(
-                    onChanged: (value) {},
+                    onChanged: (value) {
+                     
+                      
+                    },
                     decoration: const InputDecoration(
                         border: InputBorder.none,
                         prefixIcon: Icon(Icons.search),
@@ -27,6 +31,11 @@ class SearchPage extends StatelessWidget {
                 ),
               ),
             ),
+
+            ElevatedButton(onPressed: ()async{
+              var data = await loadData.readJson();
+              print(data[0]['itemName']);
+            }, child: Text('load'))
           ],
         ),
       ),

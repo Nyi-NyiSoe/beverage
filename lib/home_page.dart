@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-
+import 'item.dart';
+import 'tab_bar_widget.dart';
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
 
@@ -10,62 +11,49 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
   late final TabController _tabController =
       TabController(length: 3, vsync: this);
+     
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         title: Text('B E V E R A G E'),
       ),
-      body: DefaultTabController(
-        length: 3,
-        child: Column(
-          children: [
-          
-            TabBar(
-                indicatorSize: TabBarIndicatorSize.label,
-                indicatorColor: Colors.transparent,
-                controller: _tabController,
-                isScrollable: true,
-                labelColor: Colors.black,
-                tabs: [
-                  Tab(
-                    text: 'Soda',
-                  ),
-                  Tab(
-                    text: 'Chocolate',
-                  ),
-                  Tab(
-                    text: 'Coffee',
-                  )
-                ]),
-            Expanded(
-              child: Column(
+      body: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          TabBarWidget(tabController: _tabController),
+          Container(
+            height: MediaQuery.of(context).size.height * 0.36,
+            child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
+                  const Text('All beverages'),
                   Expanded(
-                    child: TabBarView(
-                        viewportFraction: 1,
-                        controller: _tabController,
-                        children: [
-                          Container(
-                            height: MediaQuery.of(context).size.height * 0.405,
-                            color: Colors.amberAccent,
-                          ),
-                          Container(
-                            height: MediaQuery.of(context).size.height * 0.405,
-                            color: Colors.red,
-                          ),
-                          Container(
-                            height: MediaQuery.of(context).size.height * 0.405,
-                            color: Colors.blue,
-                          )
-                        ]),
-                  )
-                ],
-              ),
-            ),
-            Text('data')
-          ],
-        ),
+                      child: ListView.builder(
+                        padding: EdgeInsets.all(5),
+                        
+                          itemCount: 5,
+                          itemBuilder: ((context, index) {
+                            return Card(
+                              elevation: 2,
+                              child: Padding(
+                                padding: const EdgeInsets.all(8.0),
+                                child: ListTile(
+                                  leading: Container(
+                                    decoration: BoxDecoration(borderRadius: BorderRadius.circular(10),color:Colors.redAccent),
+                                    child: Image(
+                                      image: AssetImage('images/cola.png'),
+                                    ),
+                                  ),
+                                  title: Text('Cocacola',style: TextStyle(fontSize: 20,fontStyle: FontStyle.italic,fontWeight: FontWeight.w500),),
+                                  trailing: Text('20',style: TextStyle(fontSize: 20,fontWeight: FontWeight.w500),),
+                                ),
+                              ),
+                            );
+                          })))
+                ]),
+          )
+        ],
       ),
     );
   }

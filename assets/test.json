@@ -1,0 +1,21 @@
+
+[
+  {
+    "imgUrl": "images/cola.png",
+    "itemName": "Cocacola",
+    "price": "20",
+    "color": "#FF0000"
+  },
+  {
+    "imgUrl": "images/pepsi.png",
+    "itemName": "Pepsi",
+    "price": "18",
+    "color": "#005BB5"
+  },
+  {
+    "imgUrl": "images/water.png",
+    "itemName": "Water",
+    "price": "1",
+    "color": "#00FFFF"
+  }
+]

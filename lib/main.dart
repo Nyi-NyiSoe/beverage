@@ -25,7 +25,6 @@ class MyApp extends ConsumerWidget {
     final pageIndex = ref.watch(_pageProvider);
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Flutter Demo',
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.brown.shade900),
       ),
