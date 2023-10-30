@@ -3,245 +3,288 @@
     {
       "imgUrl": "images/soda/coca_cola.jpg",
       "itemName": "Cocacola",
-      "price": "20"
+      "price": "20",
+      "particulars": "Eu ut voluptate irure cillum occaecat duis quis eu et amet dolor consequat magna voluptate. Veniam veniam qui est enim amet incididunt voluptate officia consequat tempor aliqua laboris. Ipsum ut culpa dolore et sit in aute. Irure occaecat dolor ullamco magna culpa nisi cillum qui laboris mollit sit duis do enim. Irure nisi velit laborum consequat et aliquip cupidatat eu adipisicing nulla excepteur deserunt."
+
     },
     {
-      "imgUrl": "images/soda/pepsi.png",
+      "imgUrl": "images/soda/pepsi.jpg",
       "itemName": "Pepsi",
-      "price": "25"
+      "price": "25",
+      "particulars": "Pepsi, a bold contender, entices with its carbonated brilliance and a hint of citrus. Packaged in a distinctive blue design, this beverage offers a zesty twist to the cola experience."
     },
     {
       "imgUrl": "images/soda/sprite.jpg",
       "itemName": "Sprite",
-      "price": "18"
+      "price": "18",
+      "particulars": "Sprite, a crisp lemon-lime flavored soda, provides a clean and refreshing feel. Its effervescent and citrusy notes make it a delightful choice for those seeking a lighter soda option."
     },
     {
       "imgUrl": "images/soda/dr_pepper.jpg",
       "itemName": "Dr. Pepper",
-      "price": "22"
+      "price": "22",
+      "particulars": "Minim sunt commodo esse laboris labore voluptate. Sunt quis incididunt ullamco sit eu exercitation nostrud. Dolore reprehenderit nulla laboris incididunt consectetur sunt commodo aliquip elit eu aliquip. Aliqua velit tempor nisi nulla ullamco dolor et officia eiusmod. Aliquip cillum anim cillum est cupidatat sint ea ad exercitation Lorem in excepteur sunt. Ullamco non incididunt deserunt Lorem aute incididunt dolore duis."
     },
     {
       "imgUrl": "images/soda/mountain_dew.jpg",
       "itemName": "Mountain Dew",
-      "price": "21"
+      "price": "21",
+      "particulars": "Mollit ipsum enim adipisicing sunt ipsum. Mollit reprehenderit anim culpa exercitation aliquip amet ex in enim. Elit duis veniam ipsum excepteur fugiat culpa ut veniam officia ullamco incididunt irure Lorem. Tempor aliqua consectetur consectetur Lorem proident excepteur. Proident eu voluptate aute mollit adipisicing pariatur ea minim. Laborum minim ut adipisicing cillum deserunt elit sunt enim elit quis aute reprehenderit anim."
     },
     {
       "imgUrl": "images/soda/fanta.jpg",
       "itemName": "Fanta",
-      "price": "19"
+      "price": "19",
+      "particulars": "Do cupidatat velit Lorem cillum qui est anim laborum ullamco. Amet reprehenderit fugiat eiusmod culpa anim id irure est. Aliquip ut consectetur id sit sint esse qui deserunt eu adipisicing adipisicing mollit exercitation. Exercitation commodo tempor ex Lorem commodo qui. Deserunt labore deserunt aliqua anim. Nulla nisi nulla excepteur proident velit veniam nulla laboris sit ut pariatur sint Lorem."
     },
     {
       "imgUrl": "images/soda/7up.jpg",
       "itemName": "7UP",
-      "price": "17"
+      "price": "17",
+      "particulars": "Mollit irure qui mollit do. Officia fugiat nisi officia occaecat Lorem sunt proident reprehenderit occaecat labore exercitation. Reprehenderit irure ea excepteur amet irure deserunt ad minim sunt. Laborum consectetur aliqua eiusmod exercitation quis voluptate commodo et quis esse consequat id aliqua. Ad consequat minim dolor ipsum. Sint veniam nisi ex ipsum non sunt commodo minim quis dolore."
     }
   ],
   "juiceList": [
     {
       "imgUrl": "images/juice/orange_juice.jpg",
       "itemName": "Orange Juice",
-      "price": "15"
+      "price": "15",
+      "particulars": "Velit cupidatat esse exercitation ea pariatur et duis et mollit aliquip ea consequat tempor veniam. Ea labore dolore consectetur velit eu sunt irure velit culpa. Ex non veniam deserunt excepteur minim ea in pariatur duis enim minim. Non nostrud labore id aliqua quis laborum deserunt mollit adipisicing qui ea. Quis ullamco laboris irure minim aute. Nulla exercitation laborum sit cupidatat dolore quis dolore. Mollit tempor consectetur pariatur excepteur ullamco fugiat quis est consectetur deserunt."
+    
     },
     {
       "imgUrl": "images/juice/apple_juice.jpg",
       "itemName": "Apple Juice",
-      "price": "14"
+      "price": "14",
+      "particulars": "Aliquip et cupidatat velit consequat amet ipsum cillum. Amet exercitation enim minim cillum dolor. Lorem veniam veniam duis nostrud est. Qui nostrud proident anim consectetur duis ullamco est nulla minim est."
     },
     {
       "imgUrl": "images/juice/cranberry_juice.jpg",
       "itemName": "Cranberry Juice",
-      "price": "16"
+      "price": "16",
+      "particulars": "Est elit ipsum et fugiat veniam ea sunt nulla voluptate aute duis in nulla. Deserunt occaecat qui excepteur irure ea. Ex laboris elit ipsum sint nostrud occaecat minim irure voluptate duis qui minim anim consequat. Est proident esse laboris minim. Ut amet anim nulla culpa non ut tempor dolor. Veniam aliquip eu officia excepteur in in esse labore dolor id proident minim excepteur. Eiusmod aliquip ad aliquip minim reprehenderit laborum fugiat consectetur."
     },
     {
       "imgUrl": "images/juice/grapefruit_juice.jpg",
       "itemName": "Grapefruit Juice",
-      "price": "18"
+      "price": "18",
+      "particulars": "Enim commodo sint do deserunt quis aliqua non exercitation velit consectetur incididunt minim est. Culpa est aliquip consequat fugiat laboris ea laboris consectetur et irure id. Dolore anim mollit magna dolore. Esse duis ea non sunt Lorem. Nulla mollit dolore enim magna culpa."
     },
     {
       "imgUrl": "images/juice/pineapple_juice.jpg",
       "itemName": "Pineapple Juice",
-      "price": "17"
+      "price": "17",
+      "particulars": "Adipisicing excepteur ipsum sit minim commodo dolor nisi commodo elit magna. Adipisicing sunt eu ea sint sint sint adipisicing cupidatat pariatur enim. Sunt cupidatat cupidatat voluptate consectetur voluptate duis cillum in enim. Nostrud officia est aute in dolore ipsum non ut officia minim do. Minim aute minim nostrud do eu exercitation voluptate ex ex duis magna eiusmod magna adipisicing. Ex minim anim minim cupidatat cupidatat dolor laborum ut do cillum. Est et aliquip fugiat ad nostrud nisi ullamco veniam incididunt aute veniam dolor."
     },
     {
       "imgUrl": "images/juice/mango_juice.jpg",
       "itemName": "Mango Juice",
-      "price": "20"
+      "price": "20",
+      "particulars": "Minim nostrud laborum reprehenderit sint officia id irure nostrud sunt. Dolore duis nulla mollit pariatur sunt id nulla laborum laborum nisi aute occaecat irure non. Magna consectetur et eiusmod aute nulla elit nulla consequat esse eu dolor laborum. Magna ex proident aute sit anim adipisicing dolore. Aliqua aliquip in aliqua reprehenderit laborum."
     },
     {
       "imgUrl": "images/juice/tomato_juice.jpg",
       "itemName": "Tomato Juice",
-      "price": "13"
+      "price": "13",
+      "particulars": "Irure et do amet ex cillum amet ullamco nulla velit fugiat non incididunt culpa. Tempor aliqua aliquip adipisicing sunt eiusmod veniam ullamco fugiat magna velit consectetur id. Aliqua magna aliqua et nisi qui aliquip tempor aliqua duis tempor. Eiusmod voluptate commodo incididunt voluptate do enim qui qui ex."
     },
     {
       "imgUrl": "images/juice/carrot_juice.jpg",
       "itemName": "Carrot Juice",
-      "price": "15"
+      "price": "15",
+      "particulars": "Nostrud dolor cupidatat in excepteur ipsum. Irure nulla commodo pariatur elit laboris nisi elit. Do quis tempor consequat sit nulla proident cillum Lorem excepteur Lorem excepteur magna ut enim."
     },
     {
       "imgUrl": "images/juice/pomegranate_juice.jpg",
-      "itemName": "Pomegranate Juice",
-      "price": "19"
+      "itemName": "Pomegranate",
+      "price": "19",
+      "particulars": "In reprehenderit quis cupidatat anim dolor labore deserunt nostrud nisi duis incididunt irure deserunt deserunt. Id est cillum esse dolore eiusmod. Et nisi do irure ad sint."
     },
     {
       "imgUrl": "images/juice/mixed_berry_juice.jpg",
       "itemName": "Mixed Berry Juice",
-      "price": "22"
+      "price": "22",
+      "particulars": "Qui consectetur do cupidatat voluptate eiusmod et excepteur sit dolor mollit qui quis. Incididunt mollit nulla non sit reprehenderit ut veniam ut. Est velit elit et dolor excepteur amet dolor irure et. Laboris dolor est et labore adipisicing ipsum esse minim voluptate in ipsum in."
     }
   ],
   "teaList": [
     {
       "imgUrl": "images/tea/black_tea.jpg",
       "itemName": "Black Tea",
-      "price": "12"
+      "price": "12",
+      "particulars": "Cillum labore anim laborum minim. Lorem dolore ipsum ad aliqua. Duis velit duis deserunt eiusmod irure voluptate qui."
     },
     {
       "imgUrl": "images/tea/green_tea.jpg",
       "itemName": "Green Tea",
-      "price": "14"
+      "price": "14",
+      "particulars": "Est consectetur consectetur ut veniam adipisicing. Reprehenderit consectetur sint ipsum ad fugiat voluptate non cupidatat minim in laboris amet laboris. Ad non amet consectetur adipisicing. Ullamco laborum ex ea eu deserunt."
     },
     {
       "imgUrl": "images/tea/chamomile_tea.jpg",
       "itemName": "Chamomile Tea",
-      "price": "16"
+      "price": "16",
+      "particulars": "Minim id fugiat in dolore sit mollit. Fugiat cupidatat velit commodo ad excepteur esse nisi pariatur laborum. Sunt id veniam commodo velit qui. Sunt esse culpa anim cupidatat ex veniam velit anim dolore sint sunt Lorem fugiat nulla. Reprehenderit deserunt et fugiat nulla sint ullamco proident. Consectetur ipsum nulla id deserunt cillum adipisicing id laborum ex elit ex nostrud."
     },
     {
       "imgUrl": "images/tea/peppermint_tea.jpg",
       "itemName": "Peppermint Tea",
-      "price": "15"
+      "price": "15",
+      "particulars": "Veniam ullamco pariatur officia irure. Labore aliquip reprehenderit nostrud commodo. Ipsum dolor culpa ex laborum exercitation consectetur labore consequat qui non enim excepteur occaecat. In est do eu quis eu culpa labore laborum. Nulla sint nulla in et consectetur eiusmod cupidatat cupidatat nisi ea proident nulla commodo. Laboris non reprehenderit amet qui eu nostrud minim magna aliquip reprehenderit duis proident. Consectetur irure ut proident aliquip incididunt Lorem sit."
     },
     {
       "imgUrl": "images/tea/earl_grey_tea.jpg",
       "itemName": "Earl Grey Tea",
-      "price": "13"
+      "price": "13",
+      "particulars": "Culpa ad exercitation pariatur cupidatat ipsum pariatur. Pariatur incididunt ipsum quis non. Labore exercitation elit et nulla esse cupidatat culpa tempor aute dolor labore voluptate consectetur."
     },
     {
       "imgUrl": "images/tea/jasmine_tea.jpg",
       "itemName": "Jasmine Tea",
-      "price": "18"
+      "price": "18",
+      "particulars": "Irure eiusmod mollit in minim dolor et. Commodo proident ea enim officia aliquip excepteur. Sint voluptate eu anim sit nostrud veniam culpa mollit nulla incididunt incididunt exercitation elit. Elit et occaecat ea deserunt officia voluptate esse laborum adipisicing id consectetur exercitation aliquip. Voluptate eu nostrud cupidatat culpa laboris nostrud non incididunt tempor non excepteur velit."
     },
     {
       "imgUrl": "images/tea/chai_tea.jpg",
       "itemName": "Chai Tea",
-      "price": "20"
+      "price": "20",
+      "particulars": "Fugiat aute aliquip nulla labore elit deserunt esse non commodo aute sunt laborum. Duis sunt quis occaecat laboris ad anim. Laboris incididunt commodo labore nisi anim cupidatat voluptate aliquip cupidatat. Est sunt laboris cillum exercitation cupidatat ad. Dolore exercitation nostrud in pariatur."
     },
     {
       "imgUrl": "images/tea/oolong_tea.jpg",
       "itemName": "Oolong Tea",
-      "price": "17"
+      "price": "17",
+      "particulars": "Nulla cillum veniam magna pariatur pariatur laboris aute sit. Amet aute non aliqua ex ullamco non et tempor ea fugiat ut consequat sint. Ad fugiat veniam anim nostrud quis. Ea elit officia ipsum elit ipsum est. Do enim laboris qui dolore aute dolore pariatur magna Lorem laborum."
     },
     {
       "imgUrl": "images/tea/white_tea.jpg",
       "itemName": "White Tea",
-      "price": "19"
+      "price": "19",
+      "particulars": "Esse excepteur ad exercitation excepteur officia. Tempor magna aliqua quis dolor in dolore magna enim tempor. Ea ad ex elit qui do mollit nisi eiusmod incididunt qui adipisicing fugiat reprehenderit. Adipisicing cupidatat dolore proident amet eu laboris duis aliqua minim. Velit cillum consectetur minim ea amet anim ipsum ullamco deserunt consectetur cupidatat."
     },
     {
       "imgUrl": "images/tea/hibiscus_tea.jpg",
       "itemName": "Hibiscus Tea",
-      "price": "21"
+      "price": "21",
+      "particulars": "Ipsum ullamco commodo do elit sit proident mollit aute enim nostrud laborum incididunt. Fugiat consequat eiusmod adipisicing elit eu voluptate labore aliqua esse. Deserunt commodo exercitation nostrud adipisicing mollit enim ea mollit eu. Aliquip anim anim deserunt pariatur aute ex ex sint anim ipsum cillum consequat. Veniam non Lorem eiusmod pariatur minim commodo culpa ea eiusmod ad ut eu nulla. Officia reprehenderit non mollit sit. Enim sint cupidatat officia aliquip et magna adipisicing."
     }
   ],
   "coffeeList": [
     {
       "imgUrl": "images/coffee/espresso.jpg",
       "itemName": "Espresso",
-      "price": "15"
+      "price": "15",
+      "particulars": "Ipsum Lorem cillum esse ad ullamco mollit amet nostrud tempor deserunt culpa. Est proident commodo laborum irure occaecat laborum do Lorem ad non. Ut adipisicing labore fugiat do reprehenderit. Reprehenderit magna enim veniam culpa. Officia sint consequat est ad deserunt irure consequat non proident aute. Laborum cupidatat commodo sit incididunt pariatur ipsum pariatur."
     },
     {
       "imgUrl": "images/coffee/americano.jpg",
       "itemName": "Americano",
-      "price": "16"
+      "price": "16",
+      "particulars": "Consequat sit reprehenderit voluptate mollit. Occaecat velit eiusmod veniam laboris enim aliqua aliquip. Exercitation sunt Lorem eu consectetur nisi. Cupidatat deserunt sit esse commodo minim qui Lorem anim anim aliqua officia. Eu duis commodo est ex. Irure irure velit aliqua ullamco exercitation est amet et dolore est."
     },
     {
       "imgUrl": "images/coffee/latte.jpg",
       "itemName": "Latte",
-      "price": "18"
+      "price": "18",
+      "particulars": "Commodo occaecat ipsum in fugiat culpa voluptate ex culpa Lorem aliqua aliqua. Consequat excepteur reprehenderit ex pariatur elit laboris ut sit ea. In consectetur reprehenderit eu ad magna. Id non anim ipsum minim irure exercitation officia aliqua labore duis tempor. Labore cillum reprehenderit nostrud minim enim esse enim quis aliquip tempor eu est. Aute pariatur tempor officia eiusmod ut. Nostrud ullamco quis adipisicing dolor nulla."
     },
     {
       "imgUrl": "images/coffee/cappuccino.jpg",
       "itemName": "Cappuccino",
-      "price": "20"
+      "price": "20",
+      "particulars": "Laborum fugiat aute laboris culpa aliquip excepteur culpa ea eiusmod quis. Elit nostrud excepteur cupidatat est consectetur non qui eu. Et nulla cupidatat culpa laborum labore minim sint anim culpa mollit eu amet esse."
     },
     {
       "imgUrl": "images/coffee/mocha.jpg",
       "itemName": "Mocha",
-      "price": "22"
+      "price": "22",
+      "particulars": "Duis cillum sint ipsum reprehenderit pariatur. Commodo commodo duis aliquip occaecat dolor nisi occaecat consequat irure nulla aliquip eiusmod. Cupidatat commodo amet in irure dolor quis voluptate consequat ad sint consectetur nisi."
     },
     {
       "imgUrl": "images/coffee/macchiato.jpg",
       "itemName": "Macchiato",
-      "price": "17"
+      "price": "17",
+      "particulars": "Eu dolor non tempor magna ex incididunt veniam. Laborum minim ad dolore non pariatur. Dolor amet anim id do occaecat. Ullamco id adipisicing reprehenderit minim. Est commodo incididunt do mollit aliqua laboris dolore elit. Minim enim nulla tempor pariatur. Officia veniam ea cillum minim aute ad ut elit velit."
     },
     {
       "imgUrl": "images/coffee/affogato.jpg",
       "itemName": "Affogato",
-      "price": "19"
+      "price": "19",
+      "particulars": "Sit anim elit in proident elit laboris elit ut excepteur ex reprehenderit. Mollit minim amet est duis eu est veniam veniam mollit voluptate aute. Mollit labore labore aliquip reprehenderit. Sit voluptate exercitation laborum dolor duis. Ea mollit commodo veniam adipisicing sint. Labore ut consectetur voluptate cillum dolor sunt."
     },
     {
       "imgUrl": "images/coffee/flat_white.jpg",
       "itemName": "Flat White",
-      "price": "21"
-    },
-    {
-      "imgUrl": "images/coffee/turkish_coffee.jpg",
-      "itemName": "Turkish Coffee",
-      "price": "23"
+      "price": "21",
+      "particulars": "Irure ipsum occaecat exercitation proident in enim id aute eiusmod. Voluptate minim anim deserunt aliquip reprehenderit tempor cillum excepteur. Sit minim sunt incididunt incididunt aute in cillum do nulla veniam voluptate ad. Deserunt ex non id voluptate aute id excepteur sunt elit."
     },
     {
       "imgUrl": "images/coffee/cold_brew.jpg",
       "itemName": "Cold Brew",
-      "price": "14"
+      "price": "14",
+      "particulars": "Reprehenderit irure veniam irure sint consequat veniam et. Esse minim voluptate quis pariatur deserunt. Sint exercitation laborum minim officia. Duis commodo velit excepteur excepteur pariatur aliquip exercitation exercitation nisi nisi elit cupidatat anim voluptate. Consequat Lorem aute magna dolore adipisicing. Nulla culpa proident enim proident sit laboris elit aute. Lorem mollit sit nisi dolor ullamco sint sit Lorem ullamco laboris Lorem velit exercitation."
     }
   ],
   "alcoholList": [
     {
       "imgUrl": "images/alcohol/margarita.jpg",
       "itemName": "Margarita",
-      "price": "25"
+      "price": "25",
+      "particulars": "Aute culpa officia est et minim aliquip velit. Reprehenderit culpa et veniam ipsum anim dolore quis deserunt culpa occaecat irure. Laboris velit officia cillum pariatur consequat sunt. Enim nulla irure voluptate laborum esse pariatur fugiat aliqua. Ullamco dolore deserunt officia Lorem sit. Excepteur eu eu voluptate duis ad amet duis ea laboris ad. Eu adipisicing exercitation sit cupidatat irure aliqua."
     },
     {
       "imgUrl": "images/alcohol/mojito.jpg",
       "itemName": "Mojito",
-      "price": "23"
+      "price": "23",
+      "particulars": "Nisi adipisicing qui et officia culpa sit proident velit pariatur enim officia enim in. Aute ipsum duis consequat magna aute culpa velit eu. Culpa fugiat reprehenderit minim laborum proident ut sunt labore cillum."
     },
     {
       "imgUrl": "images/alcohol/martini.jpg",
       "itemName": "Martini",
-      "price": "20"
+      "price": "20",
+      "particulars": "Sunt pariatur proident excepteur adipisicing. Magna proident ad reprehenderit aliqua ipsum ullamco laborum exercitation minim proident ea. In enim ea dolor deserunt in quis aliquip pariatur ex sint proident. Dolore anim reprehenderit incididunt minim eiusmod consequat excepteur."
     },
     {
       "imgUrl": "images/alcohol/old_fashioned.jpg",
       "itemName": "Old Fashioned",
-      "price": "22"
+      "price": "22",
+      "particulars": "In qui est pariatur pariatur sit excepteur quis est et. Deserunt ut cillum cupidatat proident ex magna fugiat voluptate. Sunt excepteur amet id pariatur esse reprehenderit ea tempor. Nulla minim velit labore qui esse quis nostrud est proident nulla cillum. Ea minim laborum proident tempor anim consequat laborum esse pariatur. Est irure irure sunt eiusmod tempor velit veniam cillum."
     },
     {
       "imgUrl": "images/alcohol/negroni.jpg",
       "itemName": "Negroni",
-      "price": "24"
+      "price": "24",
+      "particulars": "Lorem quis irure officia sit culpa nulla pariatur cupidatat irure deserunt esse aliquip. Reprehenderit veniam amet culpa consectetur sit do sint eu commodo proident. Qui quis adipisicing ad adipisicing exercitation Lorem sit adipisicing non sit do. Et id labore adipisicing sint fugiat in aute occaecat fugiat mollit."
     },
     {
       "imgUrl": "images/alcohol/whiskey_sour.jpg",
       "itemName": "Whiskey Sour",
-      "price": "21"
+      "price": "21",
+      "particulars": "Ullamco adipisicing id officia pariatur deserunt veniam ut tempor. Sint labore reprehenderit reprehenderit nostrud ullamco nisi enim nostrud minim aliqua irure veniam. Laboris eu veniam commodo adipisicing eu ipsum consectetur fugiat. Sunt sint incididunt laboris cillum do aute veniam et consequat nisi. Anim sunt quis sunt incididunt voluptate commodo esse."
     },
     {
       "imgUrl": "images/alcohol/moscow_mule.jpg",
       "itemName": "Moscow Mule",
-      "price": "19"
+      "price": "19",
+      "particulars": "Esse dolor occaecat magna consequat non cillum ex id Lorem aliquip. Cupidatat ad pariatur fugiat id cupidatat ipsum sit ullamco minim eiusmod magna proident nostrud. Ipsum anim duis fugiat sunt in. Ipsum ex irure sit irure quis occaecat laboris nisi."
     },
     {
       "imgUrl": "images/alcohol/cosmopolitan.jpg",
       "itemName": "Cosmopolitan",
-      "price": "18"
+      "price": "18",
+      "particulars": "Aliquip amet cillum non cupidatat. Veniam nisi eiusmod occaecat commodo non aute reprehenderit sint eiusmod incididunt adipisicing in eiusmod laboris. Do eiusmod qui nulla deserunt cillum deserunt quis dolore ex eiusmod officia ipsum occaecat. Anim incididunt occaecat esse labore ea consectetur ea et veniam et. Tempor sint labore esse et enim laboris occaecat commodo minim Lorem pariatur commodo aliqua cillum. Minim nulla incididunt adipisicing labore quis sint excepteur nisi pariatur dolor."
     },
     {
       "imgUrl": "images/alcohol/pina_colada.jpg",
       "itemName": "Piña Colada",
-      "price": "17"
+      "price": "17",
+      "particulars": "Aliquip proident enim labore duis labore dolore consectetur elit pariatur non. Exercitation ullamco eiusmod est esse non amet in consequat labore ea. Lorem reprehenderit fugiat cupidatat minim adipisicing sint aliqua enim consectetur. Amet tempor consequat duis tempor enim pariatur reprehenderit sint adipisicing reprehenderit. Nulla adipisicing ea cillum ullamco incididunt tempor quis et."
     },
     {
       "imgUrl": "images/alcohol/long_island_iced_tea.jpg",
-      "itemName": "Long Island Iced Tea",
-      "price": "16"
+      "itemName": "Long Island",
+      "price": "16",
+      "particulars": "Veniam magna cupidatat ut consectetur ea dolore incididunt mollit ipsum et occaecat Lorem nostrud. Ipsum amet nostrud excepteur dolor duis ipsum excepteur proident do consequat ea fugiat deserunt qui. Consequat ipsum nulla non ullamco fugiat esse occaecat exercitation fugiat anim ullamco aliquip elit veniam."
     }
   ]
 }

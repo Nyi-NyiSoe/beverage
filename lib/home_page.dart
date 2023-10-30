@@ -1,6 +1,7 @@
+import 'package:beverage/item_detail_page.dart';
 import 'package:beverage/load_item_data.dart';
+import 'package:beverage/search_page.dart';
 import 'package:flutter/material.dart';
-import 'item.dart';
 import 'tab_bar_widget.dart';
 import 'constants.dart';
 
@@ -46,14 +47,13 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 TabBarWidget(tabController: _tabController),
-
                 SizedBox(
                   height: MediaQuery.of(context).size.height * 0.36,
                   child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         const Padding(
-                          padding: EdgeInsets.only(left: 10),
+                          padding: EdgeInsets.all(10),
                           child: Text(
                             'Recommend',
                             style: TextStyle(fontSize: 15),
@@ -64,35 +64,40 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
                                 padding: const EdgeInsets.all(5),
                                 itemCount: snapshot.data!.length,
                                 itemBuilder: ((context, index) {
-                                  return Card(
-                                    elevation: 2,
-                                    child: Padding(
-                                        padding: const EdgeInsets.all(8.0),
-                                        child: Row(
-                                          mainAxisAlignment:
-                                              MainAxisAlignment.spaceBetween,
-                                          children: [
-                                            Image(
-                                              image: AssetImage(snapshot
-                                                  .data![index]['imgUrl']),
-                                              height: 100,
-                                              width: 100,
-                                            ),
-                                            Padding(
-                                              padding: const EdgeInsets.only(
-                                                  right: 50),
-                                              child: Text(
-                                                snapshot.data![index]
-                                                    ['itemName'],
-                                                style: kitemNameStyle,
+                                  return GestureDetector(
+                                    onTap: () => Navigator.push(context, MaterialPageRoute(builder: (context){
+                                      return SearchPage();
+                                    })),
+                                    child: Card(
+                                      elevation: 2,
+                                      child: Padding(
+                                          padding: const EdgeInsets.all(8.0),
+                                          child: Row(
+                                            mainAxisAlignment:
+                                                MainAxisAlignment.spaceBetween,
+                                            children: [
+                                              Image(
+                                                image: AssetImage(snapshot
+                                                    .data![index]['imgUrl']),
+                                                height: 100,
+                                                width: 100,
                                               ),
-                                            ),
-                                            Text(
-                                              snapshot.data![index]['price'],
-                                              style: kitemNameStyle,
-                                            )
-                                          ],
-                                        )),
+                                              Padding(
+                                                padding: const EdgeInsets.only(
+                                                    right: 50),
+                                                child: Text(
+                                                  snapshot.data![index]
+                                                      ['itemName'],
+                                                  style: kitemNameStyle,
+                                                ),
+                                              ),
+                                              Text(
+                                                snapshot.data![index]['price']+'\$',
+                                                style: kitemNameStyle,
+                                              )
+                                            ],
+                                          )),
+                                    ),
                                   );
                                 })))
                       ]),

@@ -1,3 +1,4 @@
+import 'package:beverage/item_detail_page.dart';
 import 'package:beverage/search_page.dart';
 import 'package:beverage/shopping_cart.dart';
 import 'package:flutter/material.dart';
@@ -12,7 +13,7 @@ void main() {
 class MyApp extends ConsumerWidget {
   MyApp({super.key});
 
-  List<Widget> pageList = [
+  final List<Widget> pageList = [
     const HomePage(),
     const SearchPage(),
     const ShoppingCartPage(),
@@ -33,8 +34,8 @@ class MyApp extends ConsumerWidget {
           child: Padding(
             padding: const EdgeInsets.all(8.0),
             child: Container(
-              padding: EdgeInsets.all(12),
-              margin: EdgeInsets.symmetric(horizontal: 10),
+              padding: const EdgeInsets.all(12),
+              margin: const EdgeInsets.symmetric(horizontal: 10),
               decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(10),
                   color: Colors.brown.shade900),

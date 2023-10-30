@@ -1,6 +1,6 @@
-import 'package:beverage/constants.dart';
+
 import 'package:flutter/material.dart';
-import 'item_tabView_list.dart';
+import 'item_tabview_list.dart';
 import 'load_item_data.dart';
 
 class TabBarWidget extends StatelessWidget {
@@ -61,7 +61,7 @@ class TabBarWidget extends StatelessWidget {
                             ConnectionState.waiting) {
                           return const CircularProgressIndicator();
                         } else {
-                          return itemTabViewList(snapshotData: snapshot,itemListName: 'sodaList',);
+                          return ItemTabViewList(snapshotData: snapshot,itemListName: 'sodaList',);
                         }
                       })),
                   FutureBuilder(
@@ -71,21 +71,39 @@ class TabBarWidget extends StatelessWidget {
                             ConnectionState.waiting) {
                           return const CircularProgressIndicator();
                         } else {
-                          return itemTabViewList(snapshotData: snapshot,itemListName: 'juiceList',);
+                          return ItemTabViewList(snapshotData: snapshot,itemListName: 'juiceList',);
                         }
                       })),
-                  Container(
-                    height: MediaQuery.of(context).size.height * 0.405,
-                    color: Colors.blue,
-                  ),
-                  Container(
-                    height: MediaQuery.of(context).size.height * 0.405,
-                    color: Colors.yellow,
-                  ),
-                  Container(
-                    height: MediaQuery.of(context).size.height * 0.405,
-                    color: Colors.green,
-                  )
+                  FutureBuilder(
+                      future: getItems(),
+                      builder: ((context, snapshot) {
+                        if (snapshot.connectionState ==
+                            ConnectionState.waiting) {
+                          return const CircularProgressIndicator();
+                        } else {
+                          return ItemTabViewList(snapshotData: snapshot,itemListName: 'teaList',);
+                        }
+                      })),
+                  FutureBuilder(
+                      future: getItems(),
+                      builder: ((context, snapshot) {
+                        if (snapshot.connectionState ==
+                            ConnectionState.waiting) {
+                          return const CircularProgressIndicator();
+                        } else {
+                          return ItemTabViewList(snapshotData: snapshot,itemListName: 'coffeeList',);
+                        }
+                      })),
+                  FutureBuilder(
+                      future: getItems(),
+                      builder: ((context, snapshot) {
+                        if (snapshot.connectionState ==
+                            ConnectionState.waiting) {
+                          return const CircularProgressIndicator();
+                        } else {
+                          return ItemTabViewList(snapshotData: snapshot,itemListName: 'alcoholList',);
+                        }
+                      })),
                 ]),
           ),
         ],
