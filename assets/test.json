@@ -35,5 +35,213 @@
       "itemName": "7UP",
       "price": "17"
     }
+  ],
+  "juiceList": [
+    {
+      "imgUrl": "images/juice/orange_juice.jpg",
+      "itemName": "Orange Juice",
+      "price": "15"
+    },
+    {
+      "imgUrl": "images/juice/apple_juice.jpg",
+      "itemName": "Apple Juice",
+      "price": "14"
+    },
+    {
+      "imgUrl": "images/juice/cranberry_juice.jpg",
+      "itemName": "Cranberry Juice",
+      "price": "16"
+    },
+    {
+      "imgUrl": "images/juice/grapefruit_juice.jpg",
+      "itemName": "Grapefruit Juice",
+      "price": "18"
+    },
+    {
+      "imgUrl": "images/juice/pineapple_juice.jpg",
+      "itemName": "Pineapple Juice",
+      "price": "17"
+    },
+    {
+      "imgUrl": "images/juice/mango_juice.jpg",
+      "itemName": "Mango Juice",
+      "price": "20"
+    },
+    {
+      "imgUrl": "images/juice/tomato_juice.jpg",
+      "itemName": "Tomato Juice",
+      "price": "13"
+    },
+    {
+      "imgUrl": "images/juice/carrot_juice.jpg",
+      "itemName": "Carrot Juice",
+      "price": "15"
+    },
+    {
+      "imgUrl": "images/juice/pomegranate_juice.jpg",
+      "itemName": "Pomegranate Juice",
+      "price": "19"
+    },
+    {
+      "imgUrl": "images/juice/mixed_berry_juice.jpg",
+      "itemName": "Mixed Berry Juice",
+      "price": "22"
+    }
+  ],
+  "teaList": [
+    {
+      "imgUrl": "images/tea/black_tea.jpg",
+      "itemName": "Black Tea",
+      "price": "12"
+    },
+    {
+      "imgUrl": "images/tea/green_tea.jpg",
+      "itemName": "Green Tea",
+      "price": "14"
+    },
+    {
+      "imgUrl": "images/tea/chamomile_tea.jpg",
+      "itemName": "Chamomile Tea",
+      "price": "16"
+    },
+    {
+      "imgUrl": "images/tea/peppermint_tea.jpg",
+      "itemName": "Peppermint Tea",
+      "price": "15"
+    },
+    {
+      "imgUrl": "images/tea/earl_grey_tea.jpg",
+      "itemName": "Earl Grey Tea",
+      "price": "13"
+    },
+    {
+      "imgUrl": "images/tea/jasmine_tea.jpg",
+      "itemName": "Jasmine Tea",
+      "price": "18"
+    },
+    {
+      "imgUrl": "images/tea/chai_tea.jpg",
+      "itemName": "Chai Tea",
+      "price": "20"
+    },
+    {
+      "imgUrl": "images/tea/oolong_tea.jpg",
+      "itemName": "Oolong Tea",
+      "price": "17"
+    },
+    {
+      "imgUrl": "images/tea/white_tea.jpg",
+      "itemName": "White Tea",
+      "price": "19"
+    },
+    {
+      "imgUrl": "images/tea/hibiscus_tea.jpg",
+      "itemName": "Hibiscus Tea",
+      "price": "21"
+    }
+  ],
+  "coffeeList": [
+    {
+      "imgUrl": "images/coffee/espresso.jpg",
+      "itemName": "Espresso",
+      "price": "15"
+    },
+    {
+      "imgUrl": "images/coffee/americano.jpg",
+      "itemName": "Americano",
+      "price": "16"
+    },
+    {
+      "imgUrl": "images/coffee/latte.jpg",
+      "itemName": "Latte",
+      "price": "18"
+    },
+    {
+      "imgUrl": "images/coffee/cappuccino.jpg",
+      "itemName": "Cappuccino",
+      "price": "20"
+    },
+    {
+      "imgUrl": "images/coffee/mocha.jpg",
+      "itemName": "Mocha",
+      "price": "22"
+    },
+    {
+      "imgUrl": "images/coffee/macchiato.jpg",
+      "itemName": "Macchiato",
+      "price": "17"
+    },
+    {
+      "imgUrl": "images/coffee/affogato.jpg",
+      "itemName": "Affogato",
+      "price": "19"
+    },
+    {
+      "imgUrl": "images/coffee/flat_white.jpg",
+      "itemName": "Flat White",
+      "price": "21"
+    },
+    {
+      "imgUrl": "images/coffee/turkish_coffee.jpg",
+      "itemName": "Turkish Coffee",
+      "price": "23"
+    },
+    {
+      "imgUrl": "images/coffee/cold_brew.jpg",
+      "itemName": "Cold Brew",
+      "price": "14"
+    }
+  ],
+  "alcoholList": [
+    {
+      "imgUrl": "images/alcohol/margarita.jpg",
+      "itemName": "Margarita",
+      "price": "25"
+    },
+    {
+      "imgUrl": "images/alcohol/mojito.jpg",
+      "itemName": "Mojito",
+      "price": "23"
+    },
+    {
+      "imgUrl": "images/alcohol/martini.jpg",
+      "itemName": "Martini",
+      "price": "20"
+    },
+    {
+      "imgUrl": "images/alcohol/old_fashioned.jpg",
+      "itemName": "Old Fashioned",
+      "price": "22"
+    },
+    {
+      "imgUrl": "images/alcohol/negroni.jpg",
+      "itemName": "Negroni",
+      "price": "24"
+    },
+    {
+      "imgUrl": "images/alcohol/whiskey_sour.jpg",
+      "itemName": "Whiskey Sour",
+      "price": "21"
+    },
+    {
+      "imgUrl": "images/alcohol/moscow_mule.jpg",
+      "itemName": "Moscow Mule",
+      "price": "19"
+    },
+    {
+      "imgUrl": "images/alcohol/cosmopolitan.jpg",
+      "itemName": "Cosmopolitan",
+      "price": "18"
+    },
+    {
+      "imgUrl": "images/alcohol/pina_colada.jpg",
+      "itemName": "Piña Colada",
+      "price": "17"
+    },
+    {
+      "imgUrl": "images/alcohol/long_island_iced_tea.jpg",
+      "itemName": "Long Island Iced Tea",
+      "price": "16"
+    }
   ]
 }

@@ -1,13 +1,21 @@
 import 'package:beverage/constants.dart';
 import 'package:flutter/material.dart';
+import 'item_tabView_list.dart';
+import 'load_item_data.dart';
 
 class TabBarWidget extends StatelessWidget {
-  const TabBarWidget({
+  TabBarWidget({
     super.key,
     required TabController tabController,
   }) : _tabController = tabController;
 
   final TabController _tabController;
+  final LoadItemData loadData = LoadItemData();
+
+  Future<Map<String, dynamic>> getItems() async {
+    var result = await loadData.readJson();
+    return result;
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -46,47 +54,26 @@ class TabBarWidget extends StatelessWidget {
                 viewportFraction: 1,
                 controller: _tabController,
                 children: [
-                  Container(
-                    height: MediaQuery.of(context).size.height * 0.405,
-                    //color: Colors.amberAccent,
-                    child: ListView.builder(
-                        scrollDirection: Axis.horizontal,
-                        itemCount: 5,
-                        itemBuilder: (context, index) {
-                          return Column(
-                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                            children: [
-                              Padding(
-                                padding: const EdgeInsets.all(8.0),
-                                child: Container(
-                                  margin: EdgeInsets.only(left: 5),
-                                  height: 180,
-                                  width: 200,
-                                  decoration: BoxDecoration(
-                                      borderRadius: BorderRadius.circular(30),
-                                      image: DecorationImage(
-                                          image: AssetImage(
-                                              'images/soda/coca_cola.jpg'))),
-                                ),
-                              ),
-                             Container(
-                              width: 150,
-                               child: Row(
-                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                                children: [
-                                  Text('20',style: kitemNameStyle,),
-                                  Text('Cocacola',style: kitemNameStyle,)
-                                ],
-                               ),
-                             )
-                            ],
-                          );
-                        }),
-                  ),
-                  Container(
-                    height: MediaQuery.of(context).size.height * 0.405,
-                    color: Colors.red,
-                  ),
+                  FutureBuilder(
+                      future: getItems(),
+                      builder: ((context, snapshot) {
+                        if (snapshot.connectionState ==
+                            ConnectionState.waiting) {
+                          return const CircularProgressIndicator();
+                        } else {
+                          return itemTabViewList(snapshotData: snapshot,itemListName: 'sodaList',);
+                        }
+                      })),
+                  FutureBuilder(
+                      future: getItems(),
+                      builder: ((context, snapshot) {
+                        if (snapshot.connectionState ==
+                            ConnectionState.waiting) {
+                          return const CircularProgressIndicator();
+                        } else {
+                          return itemTabViewList(snapshotData: snapshot,itemListName: 'juiceList',);
+                        }
+                      })),
                   Container(
                     height: MediaQuery.of(context).size.height * 0.405,
                     color: Colors.blue,
@@ -106,3 +93,5 @@ class TabBarWidget extends StatelessWidget {
     );
   }
 }
+
+
