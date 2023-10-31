@@ -36,7 +36,7 @@ class ItemTabViewList extends StatelessWidget {
                           image: DecorationImage(
                               image: AssetImage(snapshotData.data![itemListName]
                                   [index]['imgUrl']),
-                              fit: BoxFit.cover)),
+                              fit: BoxFit.contain)),
                     ),
                   ),
                   Card(

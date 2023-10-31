@@ -1,23 +1,41 @@
 import 'package:beverage/constants.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'cart_provider.dart';
+import 'item.dart';
 
-class ItemDetailPage extends StatelessWidget {
+class ItemDetailPage extends ConsumerWidget {
   final AsyncSnapshot<Map<String, dynamic>> snapshotData;
   final int index;
   final String itemListName;
-  ItemDetailPage(
+  const ItemDetailPage(
       {super.key,
       required this.snapshotData,
       required this.index,
       required this.itemListName});
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context, WidgetRef ref) {
+    final List<Items> cartItems = ref.read(cartProvider);
+
     return SafeArea(
         child: Scaffold(
       backgroundColor: Colors.brown.shade900,
       floatingActionButton: FloatingActionButton(
-        onPressed: () {},
+        onPressed: () {
+          Items item = Items(
+              imgUrl: snapshotData.data![itemListName][index]['imgUrl'],
+              itemName: snapshotData.data![itemListName][index]['itemName'],
+              price: snapshotData.data![itemListName][index]['price']);
+
+          ref.read(cartProvider.notifier).addToCart(item);
+          ScaffoldMessenger.of(context).showSnackBar(
+            SnackBar(
+              content: Text('Item added to the cart'),
+              duration: Duration(seconds: 2),
+            ),
+          );
+        },
         child: Icon(Icons.add_shopping_cart),
       ),
       appBar: AppBar(
@@ -90,12 +108,12 @@ class ItemDetailPage extends StatelessWidget {
           ),
           Container(
             child: Positioned(
-              left: 200,
+              left: 180,
               top: 30,
               child: Image(
                 image: AssetImage(
                     snapshotData.data![itemListName][index]['imgUrl']),
-                height: 300,
+                height: 280,
               ),
             ),
           ),

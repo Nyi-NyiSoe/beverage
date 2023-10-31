@@ -1,9 +1,8 @@
-import 'package:beverage/item_detail_page.dart';
+
 import 'package:beverage/search_page.dart';
 import 'package:beverage/shopping_cart.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-
 import 'home_page.dart';
 
 void main() {
