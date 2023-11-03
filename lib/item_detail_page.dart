@@ -16,7 +16,7 @@ class ItemDetailPage extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    final List<Items> cartItems = ref.read(cartProvider);
+   
 
     return SafeArea(
         child: Scaffold(
@@ -29,14 +29,19 @@ class ItemDetailPage extends ConsumerWidget {
               price: snapshotData.data![itemListName][index]['price']);
 
           ref.read(cartProvider.notifier).addToCart(item);
-          ScaffoldMessenger.of(context).showSnackBar(
-            SnackBar(
-              content: Text('Item added to the cart'),
-              duration: Duration(seconds: 2),
-            ),
+        showDialog(context: context, builder: ( (context) {
+          return AlertDialog(
+            content: const Text('Successfully added'),
+            actions: [
+              IconButton(onPressed: (){
+                Navigator.pop(context);
+                Navigator.pop(context);
+              }, icon:const Icon(Icons.check))
+            ],
           );
+        }));
         },
-        child: Icon(Icons.add_shopping_cart),
+        child: const Icon(Icons.add_shopping_cart),
       ),
       appBar: AppBar(
         title: const Text('Item Detail'),
@@ -47,7 +52,7 @@ class ItemDetailPage extends ConsumerWidget {
             top: 0,
             left: 0,
             right: 0,
-            child: Container(
+            child: SizedBox(
                 height: MediaQuery.of(context).size.height * 0.35,
                 child: Padding(
                   padding: const EdgeInsets.only(left: 30.0, top: 20),
@@ -56,17 +61,17 @@ class ItemDetailPage extends ConsumerWidget {
                     children: [
                       Text(
                         snapshotData.data![itemListName][index]['itemName'],
-                        style: TextStyle(
+                        style: const TextStyle(
                             color: Colors.white,
                             fontSize: 30,
                             fontWeight: FontWeight.bold),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: 30,
                       ),
                       Text(
                         snapshotData.data![itemListName][index]['price'] + '\$',
-                        style: TextStyle(
+                        style: const TextStyle(
                             color: Colors.white,
                             fontSize: 70,
                             fontWeight: FontWeight.bold),
@@ -91,11 +96,11 @@ class ItemDetailPage extends ConsumerWidget {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Text(
+                    const Text(
                       'Particulars',
                       style: kitemNameStyle,
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 30,
                     ),
                     Text(

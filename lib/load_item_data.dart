@@ -1,5 +1,3 @@
-
-
 import 'package:flutter/services.dart';
 import 'dart:convert';
 class LoadItemData{

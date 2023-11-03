@@ -1,9 +1,10 @@
-
+import 'package:beverage/cart_provider.dart';
 import 'package:beverage/search_page.dart';
 import 'package:beverage/shopping_cart.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'home_page.dart';
+import 'package:badges/badges.dart' as badges;
 
 void main() {
   runApp(ProviderScope(child: MyApp()));
@@ -23,6 +24,7 @@ class MyApp extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final pageIndex = ref.watch(_pageProvider);
+     final CartProvider cartBadge = ref.watch(cartProvider.notifier);
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
@@ -66,12 +68,16 @@ class MyApp extends ConsumerWidget {
                         onTap: () {
                           ref.read(_pageProvider.notifier).state = 2;
                         },
-                        child: Icon(
-                          pageIndex == 2
-                              ? Icons.shopping_cart
-                              : Icons.shopping_cart_outlined,
-                          color: Colors.white,
-                        )),
+                        child: badges.Badge(
+                          badgeContent: Text(cartBadge.totalItemCount().toString()),
+                          child: Icon(
+                            pageIndex == 2
+                                ? Icons.shopping_cart
+                                : Icons.shopping_cart_outlined,
+                            color: Colors.white,
+                          ),
+                        )
+                        ),
                   ],
                 ),
               ),

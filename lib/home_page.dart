@@ -1,4 +1,3 @@
-import 'package:beverage/item_detail_page.dart';
 import 'package:beverage/load_item_data.dart';
 import 'package:beverage/search_page.dart';
 import 'package:flutter/material.dart';
@@ -66,7 +65,7 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
                                 itemBuilder: ((context, index) {
                                   return GestureDetector(
                                     onTap: () => Navigator.push(context, MaterialPageRoute(builder: (context){
-                                      return SearchPage();
+                                      return  const SearchPage();
                                     })),
                                     child: Card(
                                       elevation: 2,
