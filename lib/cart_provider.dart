@@ -34,10 +34,8 @@ class CartProvider extends StateNotifier<Map<Items, int>> {
   }
 
   int totalItemCount() {
-    final totalCount = state.values.fold(0, (sum, value) => sum + value);
-    return totalCount;
+    return state.values.fold(0, (sum, value) => sum + value);
   }
-
 
   void clearCart() {
     state = {};
