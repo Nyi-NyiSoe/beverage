@@ -26,7 +26,7 @@ class ItemDetailPage extends ConsumerWidget {
           Items item = Items(
               imgUrl: snapshotData.data![itemListName][index]['imgUrl'],
               itemName: snapshotData.data![itemListName][index]['itemName'],
-              price: snapshotData.data![itemListName][index]['price']);
+              price: snapshotData.data![itemListName][index]['price'].toString());
 
           ref.read(cartProvider.notifier).addToCart(item);
         showDialog(context: context, builder: ( (context) {
@@ -70,7 +70,7 @@ class ItemDetailPage extends ConsumerWidget {
                         height: 30,
                       ),
                       Text(
-                        snapshotData.data![itemListName][index]['price'] + '\$',
+                        '${snapshotData.data![itemListName][index]['price']}\$',
                         style: const TextStyle(
                             color: Colors.white,
                             fontSize: 70,

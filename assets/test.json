@@ -280,5 +280,37 @@
       "price": "16",
       "particulars": "Veniam magna cupidatat ut consectetur ea dolore incididunt mollit ipsum et occaecat Lorem nostrud. Ipsum amet nostrud excepteur dolor duis ipsum excepteur proident do consequat ea fugiat deserunt qui. Consequat ipsum nulla non ullamco fugiat esse occaecat exercitation fugiat anim ullamco aliquip elit veniam."
     }
+  ],
+  "snackList": [
+    {
+      "imgUrl": "images/snacks/popcorn.png",
+      "itemName": "Popcorn",
+      "price": 2.5,
+      "particulars": "Veniam incididunt dolor id minim occaecat in elit commodo reprehenderit. Incididunt duis sit nostrud ut nisi elit tempor laboris est. Fugiat adipisicing tempor veniam nostrud dolor deserunt enim. Proident sint incididunt exercitation ea non voluptate magna nostrud excepteur eu cupidatat est exercitation nulla. Ea eu nulla incididunt quis culpa sint exercitation. Nulla nisi cupidatat veniam sit aute officia et.."
+    },
+    {
+      "imgUrl": "images/snacks/cheese_crackers.png",
+      "itemName": "Cheese Crackers",
+      "price": 5.99,
+      "particulars": "Do cillum incididunt eiusmod veniam nisi aliquip duis velit. Consectetur adipisicing veniam consectetur fugiat. Est nostrud culpa ipsum mollit anim incididunt qui nulla proident fugiat exercitation."
+    },
+    {
+      "imgUrl": "images/snacks/mixed_nuts.png",
+      "itemName": "Mixed Nuts",
+      "price": 4.99,
+      "particulars": "Ex aute tempor tempor mollit labore. Laborum dolore in sunt irure aliquip esse aliqua ullamco sunt dolore. Aute eu commodo consectetur et consequat adipisicing veniam occaecat nisi consequat fugiat anim dolore ea."
+    },
+    {
+      "imgUrl": "images/snacks/chocolate_pretzels.png",
+      "itemName": "Chocolate Pretzels",
+      "price": 3.75,
+      "particulars": "Consequat sunt qui laborum incididunt aliquip reprehenderit nostrud cillum labore non id et reprehenderit deserunt. Labore consectetur tempor elit fugiat magna eiusmod laborum pariatur irure. Elit commodo ullamco nostrud commodo magna reprehenderit sit do occaecat minim adipisicing."
+    },
+    {
+      "imgUrl": "images/snacks/caprese_skewers.png",
+      "itemName": "Caprese Skewers",
+      "price": 8.99,
+      "particulars": "Amet aute qui sint esse anim labore ipsum proident aliqua deserunt irure veniam aliquip esse. Dolor excepteur eu officia Lorem reprehenderit consequat fugiat consectetur. Adipisicing ea consequat magna sit."
+    }
   ]
 }

@@ -1,5 +1,4 @@
 import 'package:beverage/cart_provider.dart';
-import 'package:beverage/search_page.dart';
 import 'package:beverage/shopping_cart.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
@@ -15,7 +14,6 @@ class MyApp extends ConsumerWidget {
 
   final List<Widget> pageList = [
     const HomePage(),
-    const SearchPage(),
     const ShoppingCartPage(),
   ];
 
@@ -56,17 +54,10 @@ class MyApp extends ConsumerWidget {
                         color: Colors.white,
                       ),
                     ),
+                   
                     GestureDetector(
                         onTap: () {
                           ref.read(_pageProvider.notifier).state = 1;
-                        },
-                        child: Icon(
-                          pageIndex == 1 ? Icons.search : Icons.search_outlined,
-                          color: Colors.white,
-                        )),
-                    GestureDetector(
-                        onTap: () {
-                          ref.read(_pageProvider.notifier).state = 2;
                         },
                         child: badges.Badge(
                           badgeContent: Text(cartBadge.totalItemCount().toString()),

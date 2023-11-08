@@ -1,12 +1,8 @@
-import 'dart:async';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'item.dart';
 
 class CartProvider extends StateNotifier<Map<Items, int>> {
-  final _itemCountController = StreamController<int>.broadcast();
   CartProvider() : super({});
-
-  Stream<int> get itemCountStream => _itemCountController.stream;
 
   void addToCart(Items item) {
     state = Map<Items, int>.from(state);
@@ -35,6 +31,14 @@ class CartProvider extends StateNotifier<Map<Items, int>> {
 
   int totalItemCount() {
     return state.values.fold(0, (sum, value) => sum + value);
+  }
+
+  double totalItemPrice() {
+    return state.entries.fold<double>(0.0, (total, entry) {
+      final item = entry.key;
+      final quantity = entry.value;
+      return total + (double.parse(item.price) * quantity);
+    });
   }
 
   void clearCart() {

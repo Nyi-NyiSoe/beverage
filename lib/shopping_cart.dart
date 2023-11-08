@@ -1,4 +1,5 @@
 import 'package:beverage/constants.dart';
+import 'package:beverage/invoice_screen.dart';
 import 'package:flutter/material.dart';
 import 'cart_provider.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
@@ -100,7 +101,7 @@ class ShoppingCartPage extends ConsumerWidget {
                                       style: kitemNameStyle,
                                     ),
                                     Text(
-                                        'Total: \$ ${int.parse(cartItems.keys.elementAt(index).price) * cartItems.values.elementAt(index)}')
+                                        'Total: \$ ${double.parse(cartItems.keys.elementAt(index).price) * cartItems.values.elementAt(index)}')
                                   ],
                                 ),
                                 Padding(
@@ -131,7 +132,11 @@ class ShoppingCartPage extends ConsumerWidget {
                         );
                       }),
                 ),
-                ElevatedButton(onPressed: () {}, child: Text('Place Order'))
+                ElevatedButton(onPressed: () {
+                  Navigator.push(context, MaterialPageRoute(builder: (context){
+                    return InvoiceScreen();
+                  }));
+                }, child: Text('Place Order'))
               ],
             ),
           ));

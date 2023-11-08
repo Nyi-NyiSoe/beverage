@@ -37,6 +37,9 @@ dependencies:
   cupertino_icons: ^1.0.2
   flutter_riverpod:
   badges: ^3.1.2
+  intl: ^0.18.1
+  geolocator: ^10.1.0
+ 
   
 
 dev_dependencies:
@@ -68,6 +71,7 @@ flutter:
     - images/tea/
     - images/coffee/
     - images/alcohol/
+    - images/snacks/
     - assets/test.json
 
   # An image asset can refer to one or more resolution-specific "variants", see

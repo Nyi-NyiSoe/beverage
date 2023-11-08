@@ -46,8 +46,7 @@ class ItemTabViewList extends StatelessWidget {
                         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                         children: [
                           Text(
-                            snapshotData.data![itemListName][index]['price'] +
-                                '\$',
+                            '${snapshotData.data![itemListName][index]['price'].toString()}\$',
                             style: kitemNameStyle,
                           ),
                           Text(
